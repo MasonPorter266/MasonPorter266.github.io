@@ -1,5 +1,5 @@
 # MasonPorter266.github.io
-# Semester Portfolio Website
+Semester Portfolio Website:
 
 This is an assignment for my school. It is called Semester Portfolio and it has completed works that showcase my knowledge in programming.
 This assignment also is a list of the web standards my school wants us to use when working on projects.
