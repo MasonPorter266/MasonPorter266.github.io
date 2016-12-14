@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 
-body, ul, li, h1{
+body, ul, li, h1, h2{
     margin:0;
     padding:0;
     border:0;
@@ -26,7 +26,6 @@ nav ul{
     list-style:none;
 }
 
-
 nav ul li{
     display:inline-block;
 }
@@ -41,6 +40,49 @@ nav ul li{
 .Maintext {
     padding-top: 8px;
     padding-bottom: 8px;
+}
+
+.a1 {
+  width: 31%;
+    height: 500px;
+    background-color: aqua;
+    margin-bottom: 15px;
+}
+
+.a2 {
+  width: 31%;
+    background-color:aquamarine;
+    height: 500px;
+    margin-bottom: 15px;
+}
+
+.a3 {
+  width: 31%;
+    background-color:blueviolet;
+    height: 500px;
+    margin-bottom: 15px;
+}
+
+.a1,.a2,.a3,.a4 {
+    display: inline-block;
+    margin-right: 1%;
+    margin-left: 1%;
+}
+
+.a4 {
+  width: 31%;
+    margin-bottom: 15px;
+    background-color:chartreuse;
+    height: 500px;
+}
+
+.examples h2 {
+    text-align: center;
+}
+
+.examples h4 {
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .title {
