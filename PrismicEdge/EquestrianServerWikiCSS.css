@@ -1,0 +1,333 @@
+@charset "utf-8";
+/* CSS Document */
+
+body, ul, li, h1{
+    margin:0;
+    padding:0;
+    border:0;
+}
+
+main {
+    width:100%;
+    margin:auto;
+}
+
+body {
+    background-color:#e6e6e6;
+}
+
+header {
+    width:100%;
+    height:100px;
+    background-color:#0066ff;
+}
+
+header h1 {
+    text-align:left;
+    height: 90px;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 46px;
+    font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Verdana", "sans-serif";
+    color: white;
+}
+
+nav {
+    width:100%;
+    background-color:#F4A500;
+}
+
+nav a {
+    display:block;
+    padding-top:35px;
+    height:65px;
+}
+
+li {
+    width:150px;
+    display:inline-block;
+    text-align:center;
+    float:right;
+}
+
+a:link, a:visited {
+    text-decoration:none;
+    color:white;
+    font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Verdana", "sans-serif";
+    font-size:20px;
+}
+
+a:hover {
+    background-color: #F4A500;
+}
+
+.dropbtn {
+    background-color: #0066ff;
+    text-decoration:none;
+    color: white;
+    font-size: 20px;
+    font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Verdana", "sans-serif";
+    border: none;
+    cursor: pointer;
+    height:100px;
+    width: 150px;
+    position:inherit;
+    float: right;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #F4A500;
+}
+
+.dropdown {
+    position: relative;
+    display:block;
+    float: right;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #0066ff;
+    width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.dropdown-content a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #F4A500}
+
+.show {display:block;}
+
+section {
+    height:2200px;
+    text-decoration:none;
+    border-bottom: 4px solid #F4A500;
+}
+
+#ServerWikiMain {
+    height:2200px;
+    background-color:#FFFFFF;
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: center;
+}
+
+#ServerWikiMain a {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    border-bottom: 2px solid #F4A500;
+    text-decoration:none;
+    color:black;
+    font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Verdana", "sans-serif";
+    font-size:26px;
+}
+
+.button {
+    background-color: #0066ff;
+    text-decoration:none;
+    color: white;
+    font-size: 20px;
+    font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Verdana", "sans-serif";
+    border: none;
+    cursor: pointer;
+    height:80px;
+    width: 160px;
+}
+
+.button:hover, .button:focus {
+    background-color: #F4A500;
+}
+
+#ServerWikiMain a:hover {
+    background-color: #0066ff;
+}
+
+#ServerWikiMain img {
+    padding-top: 40px;
+}
+
+#ServerWikiMain p {
+    margin-top: 5px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-size: 35px;
+    font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Verdana", "sans-serif";
+    color:black;
+}
+
+#ServerWikiMain h2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-size: 15px;
+    font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Verdana", "sans-serif";
+    color:black;
+}
+
+#ServerWikiMain h3 {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    text-align: left;
+    font-size: 20px;
+    font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Verdana", "sans-serif";
+    color:black;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#ServerWikiMain h4 {
+    margin-top: 95px;
+    margin-bottom: 0px;
+    text-align: left;
+    font-size: 10px;
+    font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Verdana", "sans-serif";
+    color:black;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#ServerWikiMain h5 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-size: 20px;
+    font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Verdana", "sans-serif";
+    color:red;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#ServerWikiMain h6 {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-size: 20px;
+    font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Verdana", "sans-serif";
+    color:green;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#Icon img {
+    margin-left: 8%;
+}
+
+#Icon2 img {
+    margin-left: 1%;
+}
+
+#Icon3 img {
+    margin-left: 1%;
+    margin-right: 8%;
+}
+
+#Icon4 img {
+    margin-left: 8%;
+    margin-top: 25px;
+    padding-top: 0px;
+}
+
+#Icon5 img {
+    margin-left: 1%;
+    margin-top: 25px;
+    padding-top: 0px;
+}
+
+#Icon6 img {
+    margin-left: 1%;
+    margin-right: 8%;
+    margin-top: 25px;
+    padding-top: 0px;
+}
+
+
+#ServerWikiButtonMain {
+    margin-top: 25px;
+    margin-bottom: 0px;
+    font-size: 20px;
+    font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Verdana", "sans-serif";
+    color:black;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+}
+
+#ServerWikiButton1 {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-size: 20px;
+    font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Verdana", "sans-serif";
+    color:black;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+}
+
+#ServerWikiButton2 {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-size: 20px;
+    font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Verdana", "sans-serif";
+    color:black;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+}
+
+#ServerWikiButton3 {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-size: 20px;
+    font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Verdana", "sans-serif";
+    color:black;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+}
+
+#ServerWikiButton4 {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-size: 20px;
+    font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Verdana", "sans-serif";
+    color:black;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+}
+
+article {
+    text-align: center;
+    background-color: #3385ff;
+    color: white;
+    height: 25px;
+    padding-top: 5px;
+}
+
+aside {
+    float: left;
+    width: 20%;
+    height: 2200px;
+    background-color: #e6e6e6;
+}
+
+aside2 {
+    float: right;
+    width: 20%;
+    height: 2200px;
+    background-color: #e6e6e6;
+}
+
+footer {
+    background-color:#0066ff;
+    color:white;
+    height:140px;
+    text-align: center;
+    padding-top:20px;
+}

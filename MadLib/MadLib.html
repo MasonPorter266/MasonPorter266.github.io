@@ -1,0 +1,356 @@
+<!doctype html>
+
+<html>
+<head>
+<meta charset="utf-8">
+<title>Mad Libs</title>
+<!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:700" rel="stylesheet">
+<style>
+    body, ul, li, h1{
+    margin:0;
+    padding:0;
+    border:0;
+}
+    
+    header {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    
+    header h1 {
+        text-align: center;
+        font-family: 'Shrikhand', cursive;
+        font-size: 40px;
+        padding-top: 10px;
+        color: #26a2a3;
+    }
+    /* Glyph, by Harry Roberts */ 
+    header hr {
+        margin-left: 30%;
+        margin-right:30%;
+        padding: 0; 
+        border: none; 
+        border-top: medium double #333; 
+        color: #333; 
+        text-align: center;
+    }
+        
+    header hr:after { 
+        content: "§"; 
+        color:#26a2a3;
+        display: inline-block; 
+        position: relative; 
+        top: -0.7em; 
+        font-size: 1.5em; 
+        padding: 0 0.25em; 
+        background: white; 
+    }
+    
+    section {
+       margin-left: 10%;
+        margin-right: 10%; 
+    }
+    
+    section h3 {
+        font-family: 'Shrikhand', cursive;
+        font-size: 25px;
+        color: #26a2a3;
+    }
+    
+    .hide {
+    display: none;
+    }
+    
+    section select{
+       
+    }
+    
+    article {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    
+    article h3 {
+       font-family: 'Shrikhand', cursive;
+        font-size: 25px;
+        color: #26a2a3;
+    }
+    
+    #Output h4{
+        font-family: 'Roboto Slab', serif;
+        font-size: 16px;
+        color: black;
+    }
+    
+    #Output h5{
+        font-family: 'Roboto Slab', serif;
+        font-size: 16px;
+        color: black;
+    }
+    
+    }
+</style>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
+    <script>
+    $(document).on('change', '.div-toggle', function() {
+  var target = $(this).data('target');
+  var show = $("option:selected", this).data('show');
+  $(target).children().addClass('hide');
+  $(show).removeClass('hide');
+});
+$(document).ready(function(){
+	$('.div-toggle').trigger('change');
+});
+    
+    //Jack and Jill Input areas(back end) with Output
+    //replace() statement used in first userInput
+    function displayOutput() {
+            var input = document.getElementById("userInput").value;
+            var inputa = input.replace(/hill/gi, "wall");
+            var input2 = document.getElementById("userInput2").value;
+            var input3 = document.getElementById("userInput3").value;
+            var input4 = document.getElementById("userInput4").value;
+            var input5 = document.getElementById("userInput5").value;
+            var input6 = document.getElementById("userInput6").value;
+            var input7 = document.getElementById("userInput7").value;
+            var input8 = document.getElementById("userInput8").value;   
+            var input9 = document.getElementById("userInput9").value;
+            var input10 = document.getElementById("userInput10").value;
+            if (input.length === 0) {
+                alert("You did not fill in a box");
+                return;
+            }
+           document.getElementById("result").innerHTML = "Jack and Jill went up the " + inputa + ", To " + input2 + " a pail of " + input3 + ";" + " Jack " + input4 + " down, and broke his " + input5 + ", And Jill came " + input6 + " after." + " Then up Jack got and off did " + input7 + ", As " + input8 + " as he could caper, The old Dame Dob, who patched his " + input9 + "; With " + input9 + " and " + input10 + " paper.";
+        }
+        
+    //Holiday Math Input areas(back end) with Output
+    function displayOutputHoliday() {
+            var inputHoliday = document.getElementById("userInputHoliday").value;
+            var inputHoliday2 = document.getElementById("userInputHoliday2").value;
+            var inputHoliday3 = document.getElementById("userInputHoliday3").value;
+            var inputHoliday4 = document.getElementById("userInputHoliday4").value;
+                //Math function 1
+            var math1 = document.getElementById("userInputHoliday3").value;
+            var math2 = document.getElementById("userInputHoliday4").value;
+            var math3 = +math1 + +math2;
+                //end of function 1
+            var inputHoliday5 = document.getElementById("userInputHoliday5").value;
+                //Math function 2
+            var math4 = document.getElementById("userInputHoliday5").value;
+            var math5 = +math3 + +math4;
+                //end of function 2
+            var inputHoliday6 = document.getElementById("userInputHoliday6").value;
+                //Math function 3
+            var math6 = document.getElementById("userInputHoliday6").value;
+            var math7 = +math5 - +math6;
+                //end of function 3
+            var inputHoliday7 = document.getElementById("userInputHoliday7").value;
+            var inputHoliday8 = document.getElementById("userInputHoliday8").value;   
+            var inputHoliday9 = document.getElementById("userInputHoliday9").value;
+                //math function 4
+            var math8 = document.getElementById("userInputHoliday8").value;
+            var math9 = document.getElementById("userInputHoliday9").value;
+            var math10 = +math8 + +math9;
+                //end of function 4
+                //Math function 5
+            var math11= +math10 + +math7;
+                //end of function 5
+            if (inputHoliday.length === 0) {
+                alert("You did not fill in a box");
+                return;
+            }
+           document.getElementById("result2").innerHTML = inputHoliday + " went to the " + inputHoliday2 + " to buy " + inputHoliday3 + " presents and " + inputHoliday4 + " cookies. When she finished she had a total of " + math3 + " items bought. However, she forgot " + inputHoliday5 + " strings of lights and had to go back. When " + inputHoliday + " got the lights she had a total of " + math5 + " items. At home, " + inputHoliday + " lost " + inputHoliday6 + " items leaving her with " + math7 + ". " + inputHoliday7 + " gives " + inputHoliday + " " + inputHoliday8 + " snowflakes and " + inputHoliday9 + " ornaments totaling to " + math10 + ". " + inputHoliday + " now has " + math11 + " items.";
+        }
+    
+        //title "" for jack and jill
+     function titlejack() {
+        var y = '\"Jack and Jill\"';
+         document.getElementById("title1").innerHTML = y;
+    }
+            
+        //title "" for holiday math
+    function titleHoliday() {
+        var x = '\"Holiday Math\"';
+         document.getElementById("title2").innerHTML = x;
+    }
+    
+        //CharAt() statement location
+    function stringassignmentCharAt(){
+        var char1 = document.getElementById("userInput2").value;
+        var char2 = char1.charAt(0);
+        if (char1.length === 0) {
+                alert("You did not fill in a box");
+                return;
+            }
+           document.getElementById("CharAt").innerHTML = "The first input(Noun)= " + char2;
+    }
+       
+        //Concat() statement location
+    function stringassignmentconcat(){
+        var concat1= document.getElementById("userInput6").value;
+        var concat2= document.getElementById("userInput5").value;
+        var concat3= concat1.concat(concat2);
+        if (concat1.length === 0) {
+                alert("You did not fill in a box");
+                return;
+            }
+           document.getElementById("ConCat").innerHTML = "When you combine the sixth input with the fifth input you get= " + concat3;
+    }
+       
+        //Substr() statement location
+    function stringassignmentSubstr(){
+        var substr1 = document.getElementById("userInput8").value; var substr2 = substr1.slice(1,15);
+         if (substr1.length === 1) {
+                alert("You need at least a two letter word for 8th input!");
+                return;
+            }
+           document.getElementById("SubStr").innerHTML = "When you remove the first letter of input eight you get= " + substr2;
+    }
+        
+        //indexOf() statement location
+    function stringassignmentindexOf(){
+        var index1 = document.getElementById("userInput3").value;
+        var index2 = index1.indexOf("m");
+        if (index1.length === 0) {
+                alert("You did not fill in input 3!");
+                return;
+            }
+           document.getElementById("indexOf").innerHTML = "There is a M located " + index2 + " letters from beginning of the 3rd input";
+    }
+        
+    //toUppercase() statement location
+    function stringassignmenttoUppercase(){
+        var upper1 = document.getElementById("userInput7").value;
+        var upper2 = upper1.toUpperCase();
+        if (upper1.length === 0) {
+                alert("You did not fill in input 7!");
+                return;
+            }
+           document.getElementById("Uppercase").innerHTML = "Input 7 was converted into= " + upper2;
+    }
+        
+        //length() statement location
+    function stringassignmentLength(){
+        var Length1 = document.getElementById("userInput10").value;
+        var Length2 = Length1.length;
+        if (Length1.length === 0) {
+                alert("You did not fill in input 10!");
+                return;
+            }
+           document.getElementById("length").innerHTML = "The length of your 10th input is= " + Length2;
+    }
+    </script>
+</head>
+
+<body>
+   <header>
+    <h1>Mad Libs</h1>
+    <hr class="style-eight">
+    </header>
+    <section>
+    <!--
+"Pick a Mad Lib" drop down.
+-->
+    <h3>Pick a Mad Lib</h3>
+    <select class="div-toggle" data-target=".my-info-1">
+    <option value="empty" disabled selected hidden>Pick a Mad Lib</option>
+    <option value="orange" id="orange" data-show=".citrus">Jack and Jill Mad Lib</option>
+    <option value="lemon" id="lemon" data-show=".pome">Holiday Math Mad Lib</option>
+    </select>
+
+    <!--
+"Jack and Jill Mad Lib" Input boxes that appear after selecting Jack and Jill.
+-->
+<div class="my-info-1">
+    <div class="citrus hide">
+    <br>
+    Noun:<br><input type="text" id="userInput" value=""><br>
+    Verb:<br> <input type="text" id="userInput2" value=""><br>
+    Liquid:<br> <input type="text" id="userInput3" value=""><br>
+    Verb "past tense":<br> <input type="text" id="userInput4" value=""><br>
+    Noun:<br> <input type="text" id="userInput5" value=""><br>
+    Verb:<br> <input type="text" id="userInput6"value=""><br>
+    Adjective:<br> <input type="text" id="userInput7" value=""><br>
+    Noun:<br> <input type="text" id="userInput8" value=""><br>
+    Noun:<br> <input type="text" id="userInput9" value=""><br>
+    Adjective:<br> <input type="text" id="userInput10" value=""><br>
+    <input type="submit" value="Generate Mad Lib" onclick="displayOutput(); titlejack();" />
+    </div>
+    
+        <!--
+"Holiday Math Mad Lib" Input boxes that appear after selecting Holiday Festivites.
+-->
+    <div class="pome hide">
+    <br>
+    Female Name:<br> <input type="text" id="userInputHoliday" value=""><br>
+    Noun:<br> <input type="text" id="userInputHoliday2" value=""><br>
+    Number:<br> <input type="number" id="userInputHoliday3" value=""><br>
+    Number:<br> <input type="number" id="userInputHoliday4" value=""><br>
+    Number:<br> <input type="number" id="userInputHoliday5" value=""><br>
+    Number:<br> <input type="number" id="userInputHoliday6" value=""><br>
+    New Name:<br> <input type="text" id="userInputHoliday7" value=""><br>
+    Number:<br> <input type="number" id="userInputHoliday8" value=""><br>
+    Number:<br> <input type="number" id="userInputHoliday9" value=""><br>
+    <input type="submit" value="Generate Mad Lib" onclick="displayOutputHoliday(); titleHoliday();" />
+    </div>
+</div>
+    </section>
+    <br>
+    <article>
+    <hr>
+        
+    <!--
+"Ouput" area which pulls information from inputs and displays on screens.
+-->
+    <div id="Output">
+    <h3>Output</h3>
+        <div class="my-info-1">
+        <div class="citrus hide">
+    <h5 id="title1">
+            
+    </h5>
+    <h4 id="result">
+    
+    </h4>
+    <hr>
+    <!--
+"Additional Info" area which pulls information from inputs and displays on screens. This is were most of the strings for the assignment are displayed.
+-->
+   <h3>Additional Info</h3>
+        <input type="submit" value="Generate Info" onclick="stringassignmentCharAt(); stringassignmentconcat(); stringassignmentSubstr(); stringassignmentLength(); stringassignmentindexOf(); stringassignmenttoUppercase();" /> 
+        <h5 id="CharAt">
+          
+        </h5>
+         <h5 id="ConCat">
+        
+        </h5>
+        <h5 id="SubStr">
+        
+        </h5>
+        <h5 id="length">
+        
+        </h5>
+        <h5 id="indexOf">
+        
+        </h5>
+        <h5 id="Uppercase">
+        
+        </h5>
+    </div>
+        <div class="pome hide">
+    <h5 id="title2">
+            
+    </h5>
+    <h4 id="result2">
+        
+    </h4>
+    </div>
+</div>
+    </div>
+    </article>
+</body>
+</html>
