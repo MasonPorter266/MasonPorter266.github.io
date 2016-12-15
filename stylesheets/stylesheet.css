@@ -10,7 +10,7 @@ body, ul, li, h1, h2{
 header{
 background-color: skyblue;
 width: 100%;
-height: 60px;
+height: 70px;
 }
 
 .Logo {
@@ -42,25 +42,64 @@ nav ul li{
     padding-bottom: 8px;
 }
 
+.Mainbutton {
+    width: 40%;
+    height: 40px;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
 .a1 {
   width: 31%;
-    height: 500px;
-    background-color: aqua;
+    height: auto;
+    background-color: #2391ff;
     margin-bottom: 15px;
+}
+
+.a1 img {
+    height: auto;
+    width: 75%;
+    display:flex;
+    padding-left: 12%;
+    padding-right: 12%;
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
 
 .a2 {
   width: 31%;
     background-color:aquamarine;
-    height: 500px;
+    height: auto;
     margin-bottom: 15px;
+}
+
+.a2 img {
+    height: auto;
+    width: 75%;
+    display:flex;
+    padding-left: 12%;
+    padding-right: 12%;
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
 
 .a3 {
   width: 31%;
     background-color:blueviolet;
-    height: 500px;
+    height: auto;
     margin-bottom: 15px;
+}
+
+.a3 img {
+    height: auto;
+    width: 75%;
+    display:flex;
+    padding-left: 12%;
+    padding-right: 12%;
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
 
 .a1,.a2,.a3,.a4 {
@@ -73,7 +112,17 @@ nav ul li{
   width: 31%;
     margin-bottom: 15px;
     background-color:chartreuse;
-    height: 500px;
+    height: auto;
+}
+
+.a4 img {
+    height: auto;
+    width: 75%;
+    display:flex;
+    padding-left: 12%;
+    padding-right: 12%;
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
 
 .examples h2 {
@@ -94,6 +143,8 @@ nav ul li{
 
 footer {
     background-color: skyblue;
+    height:70px;
+    margin-top: 30px;
 }
 
 @media screen and (min-width: 64em) {
