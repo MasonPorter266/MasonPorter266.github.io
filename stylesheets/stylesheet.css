@@ -215,12 +215,12 @@ nav a:hover {
 
 footer {
     background-color: #00e195;
-    height:70px;
+    height:120px;
     margin-top: 30px;
     text-align: center;
     font-size: 18px;
     font-family: 'Roboto Condensed', sans-serif;
-    padding-top: 20px;
+    padding-top: 12px;
 }
 
 footer li {
@@ -270,6 +270,15 @@ footer a:hover {
     background-color: #00ba7b;
     border: 2px solid #00ba7b;
     color: black;
+}
+
+.social {
+   
+}
+
+.icon {
+    width: 38px;
+    height: auto;
 }
 
 @media screen and (min-width: 64em) {
