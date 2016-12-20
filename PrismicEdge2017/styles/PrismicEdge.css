@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* CSS Document */
+
+body, ul, li, h1, h2, h3, h4, h5, h6, p {
+    margin:0;
+    padding:0;
+    border:0;
+}
+
+/* Change colors when scheme is picked */
+.PrismicEdge {
+    background-color:darkturquoise;
+}
+
+header {
+    background-color: aquamarine;
+}
+
+footer {
+    background-color:chartreuse;
+}

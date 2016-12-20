@@ -1,0 +1,8 @@
+Feature Additions for Website:
+------------------------------
+-Mobile scaling of nav and home
+-Fix Demonstration buttons to size properly on mobile
+-Add new Prismic Edge site
+-Add all older projects
+-Seperate projects by year
+-Show progress of items on home
