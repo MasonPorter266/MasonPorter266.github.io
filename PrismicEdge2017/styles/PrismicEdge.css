@@ -16,6 +16,10 @@ header {
     background-color: aquamarine;
 }
 
+.Mainbody {
+    background-color: coral;
+}
+
 footer {
     background-color:chartreuse;
 }
