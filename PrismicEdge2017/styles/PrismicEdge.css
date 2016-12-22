@@ -10,6 +10,7 @@ body, ul, li, h1, h2, h3, h4, h5, h6, p {
 /* Change colors when scheme is picked */
 .PrismicEdge {
     background-color:darkturquoise;
+    width: 100%;
 }
 
 header {
@@ -17,9 +18,14 @@ header {
 }
 
 .Mainbody {
-    background-color: coral;
+    background-color: white;
+}
+
+.icon {
+    width: 38px;
+    height: auto;
 }
 
 footer {
-    background-color:chartreuse;
+    background-color:deepskyblue;
 }
