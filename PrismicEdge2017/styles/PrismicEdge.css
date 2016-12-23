@@ -22,7 +22,12 @@ header {
 }
 
 .displaybanner {
-    height: 450px;
+    
+}
+
+.displayimage {
+    width:100%;
+    height: auto;
 }
 
 .icon {
