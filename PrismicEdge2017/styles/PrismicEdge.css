@@ -21,6 +21,10 @@ header {
     background-color: white;
 }
 
+.displaybanner {
+    height: 450px;
+}
+
 .icon {
     width: 38px;
     height: auto;
